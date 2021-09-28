@@ -1,2 +1,13 @@
-import React from "react";
-import { Router } from "react-router";
+import React, { Component } from 'react'
+
+class Main extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
+}
+
+export default Main;
