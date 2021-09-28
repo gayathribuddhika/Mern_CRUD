@@ -5,12 +5,11 @@ import {BrowserRouter} from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Create from './components/create';
+
 
 ReactDOM.render(
   <BrowserRouter>
      <App />
-     <Create />
   </BrowserRouter>, document.getElementById('root')
 );
 
