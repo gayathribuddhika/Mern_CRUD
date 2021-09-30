@@ -30,6 +30,16 @@ class Create extends Component {
         this.setState ({ nic_number: e.target.value })
     }
 
+    onSubmit (e) {
+        e.preventDefault ();
+        console.log(`This values are ${this.state.person_name}, ${this.state.business_name}, and ${this.state.nic_number}`)
+        this.setState({
+            person_name: '',
+            business_name: '',
+            nic_number: ''
+        })
+    }
+
     render() {
         return (
             <div style={{marginTop:10}}>
