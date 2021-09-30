@@ -46,20 +46,20 @@ class Create extends Component {
                <br/> 
                <h4>Add a new Business</h4>
                
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Person Name :</label>
-                        <input type="text" className="form-control"/>
+                        <input type="text" className="form-control" value={this.state.person_name} onChange={this.onChangePersonName}/>
                     </div>
                     
                     <div className="form-group">
                         <label>Business Name :</label>
-                        <input type="text" className="form-control"/>
+                        <input type="text" className="form-control" value={this.state.business_name} onChange={this.onChangeBusinessName}/>
                     </div>
                     
                     <div className="form-group">
                         <label>NIC Number :</label>
-                        <input type="text" className="form-control"/>
+                        <input type="text" className="form-control" value={this.state.nic_number} onChange={this.onChangeNICNumber}/>
                         <br/>
                     </div>
                     
